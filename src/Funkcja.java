@@ -1,4 +1,4 @@
-import static java.lang.Math.*;
+import static java.lang.Math.sqrt;
 
 public class Funkcja {
     public static void liczeniefunkcji(double a,double b,double c){
