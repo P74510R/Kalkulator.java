@@ -1,6 +1,6 @@
 public class Fibonacci {
     public static void liczeniefibonacci(int n){
-        System.out.print("The first "+ n +" Fibonacci numbers are :");
+        System.out.print("Pierwsze "+ n +" liczb ciągu Fibonacciego to: ");
         int num1=0;
         int num2=1;
         for(int i=0;i<n;i++){
