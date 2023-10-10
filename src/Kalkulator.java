@@ -8,6 +8,7 @@ public class Kalkulator {
         System.out.println("2.Policzyć silnie.");
         System.out.println("3.Poznać N liczbe w ciągu Fibonacciego.");
         System.out.println("4.Obliczyć miejsca zerowe funkcji kwadratowej.");
+        System.out.println("5.Obliczyc NWD(Najwiekszy wspolny dzielnik) lub NWW(najmniejsza wspolna wielokrotnosc) dwóch liczb");
         int wybor= sil.nextInt();
         if (wybor==1){
           System.out.println("Jakie dzialanie chcesz wykonac?");
@@ -57,22 +58,38 @@ public class Kalkulator {
             Silnia.liczeniesilnii(m);
         } else if (wybor==3) {
             System.out.println("Podaj wspolczynnik N: ");
-            Scanner N = new Scanner(System.in);
-            int n = N.nextInt();
+            int n = sil.nextInt();
             Fibonacci.liczeniefibonacci(n);
         } else if (wybor==4) {
             System.out.println("Podaj pierwszy wspolczynnik: ");
-            Scanner pier = new Scanner(System.in);
-            double a = pier.nextDouble();
+            double a = sil.nextDouble();
             System.out.println("Podaj drugi wspolczynnik: ");
-            Scanner drug = new Scanner(System.in);
-            double b = drug.nextDouble();
+            double b = sil.nextDouble();
             System.out.println("Podaj trzeci wspolczynnik: ");
-            Scanner trz = new Scanner(System.in);
-            double c = trz.nextDouble();
+            double c = sil.nextDouble();
             Funkcja.liczeniefunkcji(a,b,c);
-        }
-        else {
+        } else if (wybor==5) {
+            int wybor3;
+            System.out.println("Co chcesz zrobić?");
+            System.out.println("1.Obliczyć NWD");
+            System.out.println("2.Obliczyć NWW");
+            wybor3 = sil.nextInt();
+            if (wybor3==1){
+                System.out.println("Podaj pierwsza liczbe: ");
+                int a = sil.nextInt();
+                System.out.println("Podaj druga liczbe: ");
+                int b = sil.nextInt();
+                System.out.println(nwdnww.NWD(a,b));
+            } else if (wybor3==2){
+                System.out.println("Podaj pierwsza liczbe: ");
+                int a = sil.nextInt();
+                System.out.println("Podaj druga liczbe: ");
+                int b = sil.nextInt();
+                System.out.println(nwdnww.NWW(a,b));
+            } else {
+                System.out.println("Nie ma takiej opcji;");
+            }
+        } else {
             System.out.println("Nie ma takiej opcji;");
         }
     }
