@@ -1,2 +1,2 @@
 # Kalkulator
-Prosty program do licznie miejsc zerowych funkcji, cyfr ciągu fibonacciego i silni
+##Prosty program do rozwiazywania prostych problemow matematycznych, liczenia miejsc zerowych funkcji kwadratowej, cyfr ciągu fibonacciego i silni
