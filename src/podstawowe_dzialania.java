@@ -36,4 +36,5 @@ public class podstawowe_dzialania {
         }
         System.out.println(wynik);
     }
+
 }

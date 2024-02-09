@@ -79,13 +79,13 @@ public class Kalkulator {
                 int a = sil.nextInt();
                 System.out.println("Podaj druga liczbe: ");
                 int b = sil.nextInt();
-                System.out.println(nwdnww.NWD(a,b));
+                System.out.println("Najwiekszy wspolny dzielnik tych liczb to: "+nwdnww.NWD(a,b));
             } else if (wybor3==2){
                 System.out.println("Podaj pierwsza liczbe: ");
                 int a = sil.nextInt();
                 System.out.println("Podaj druga liczbe: ");
                 int b = sil.nextInt();
-                System.out.println(nwdnww.NWW(a,b));
+                System.out.println("Najwieksza wspolna wielokrotnosc tych liczb to :"+nwdnww.NWW(a,b));
             } else {
                 System.out.println("Nie ma takiej opcji;");
             }
